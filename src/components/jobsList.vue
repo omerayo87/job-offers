@@ -1,13 +1,18 @@
 <template>
-    <div>
+    <div class="job-list">
         <ul>
             <li v-for="job in jobs" :key="job.id">
                 <h2>{{ job.title }} in {{ job.location }}</h2>
-                <div>
+                <div class="salary">
                     <p><b>{{ job.salary }} euros</b></p>
                 </div>
                 <div>
-                    <p>asdfasdf asdfasdfasdfa sdasdfasdfasdfa sdasdfasd</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
                 </div>
             </li>
         </ul>
@@ -29,5 +34,33 @@
 </script>
 
 <style scoped>
-
+    .job-list {
+        max-width: 960px;
+        margin: 40px auto;
+    }
+    .job-list ul {
+        padding: 0;
+    }
+    .job-list li {
+        list-style-type: none;
+        background: white;
+        padding: 16px;
+        margin: 16px 0;
+        border-radius: 4px;
+    }
+    .job-list h2 {
+        margin: 0 0 10px;
+        text-transform: capitalize;
+    }
+    .salary {
+        display: flex;
+    }
+    .salary img {
+        width: 30px;
+    }
+    .salary p {
+        color: #04C7F8;
+        font-weight: bold;
+        margin: 10px 4px;
+    }
 </style>
