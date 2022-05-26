@@ -4,3 +4,10 @@ body {
     font-family: 'Open Sans', serif;
     background: #E0F8FE;
 }
+@font-face {
+    font-family: medallion-typeface;
+    src: local(medallion-typeface);
+}
+h1 {
+    font-family: medallion-typeface;
+}
